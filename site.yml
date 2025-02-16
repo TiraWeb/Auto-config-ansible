@@ -1,20 +1,6 @@
 ---
-- name: Configure AWS Web Server
+- name: Configure AWS Web Server with Nginx Role
   hosts: web
-  become: yes  
-  tasks:
-    - name: Update apt cache
-      apt:
-        update_cache: yes
-
-    - name: Install Nginx
-      apt:
-        name: nginx
-        state: present
-
-    - name: Start and enable Nginx service
-      service:
-        name: nginx
-        state: started
-        enabled: yes
-
+  become: true
+  roles:
+    - nginx
