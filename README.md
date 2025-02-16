@@ -57,7 +57,7 @@ This project integrates GitHub Actions to automate linting and syntax checks:
    
    ![image](https://github.com/user-attachments/assets/12a38a4b-7e94-43e5-8ef3-7bdb5984c0dd)
    
-(first run failed because of too many blanks in site.yml and main.yml)
+   (first run failed because of too many blanks in site.yml and main.yml)
 
   
 6. **Project Structure:**
