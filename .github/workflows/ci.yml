@@ -1,0 +1,30 @@
+name: Ansible CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install ansible ansible-lint
+
+      - name: Run ansible-lint
+        run: ansible-lint site.yml
+
+      - name: Run playbook syntax check
+        run: ansible-playbook --syntax-check -i hosts.ini site.yml
+
