@@ -39,23 +39,28 @@ This project integrates GitHub Actions to automate linting and syntax checks:
 ## Screenshots
 
 1. **AWS EC2 Console**
+   
    ![image](https://github.com/user-attachments/assets/aa1e118b-9483-4642-918a-bc124c6d2480)
 
 
-2. **Terminal Output**
+3. **Terminal Output**
+   
    ![image](https://github.com/user-attachments/assets/8d4dbb76-5d86-4eea-a9a3-ac50197048be)
 
    
-3. **Nginx Web Page**
+4. **Nginx Web Page**
+   
    ![image](https://github.com/user-attachments/assets/ba6b1cbc-8955-4b47-85bc-fd90a468a387)
 
 
-4. **GitHub Actions Workflow**
+5. **GitHub Actions Workflow**
+   
    ![image](https://github.com/user-attachments/assets/12a38a4b-7e94-43e5-8ef3-7bdb5984c0dd)
    
 (first run failed because of too many blanks in site.yml and main.yml)
 
   
 6. **Project Structure:**
+   
    ![image](https://github.com/user-attachments/assets/25ca9c63-22d8-4be0-b613-5f51e2b233ac)
 
